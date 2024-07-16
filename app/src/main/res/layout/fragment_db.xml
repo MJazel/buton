@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".DbFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -76,11 +75,10 @@
                 android:layout_gravity="center"
                 android:id="@+id/btnSubirFoto"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/button"
-                android:onClick="onUploadPhotoClicked"/>
+                android:backgroundTint="@color/button"/>
 
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Especialidad"/>
@@ -90,41 +88,46 @@
                 android:id="@+id/inEspecialidad"
                 android:hint="Grado, licenciatura o Ing."
                 android:layout_marginBottom="10dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Guardar"
-                android:id="@+id/btnGuardar"
-                android:backgroundTint="@color/button"
-                android:textColor="@color/black"
-                />
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:stretchColumns="*">
-                <TableRow>
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Buscar"
-                        android:id="@+id/btnBuscar"
-                        android:textColor="@color/black"
-                        android:layout_margin="5dp"
-                        android:backgroundTint="@color/button"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="Borrar"
-                        android:id="@+id/btnBorrar"
-                        android:textColor="@color/black"
-                        android:enabled="false"
-                        android:layout_margin="5dp"
-                        android:backgroundTint="@color/button_red"
-                        android:layout_weight="1"/>
-                </TableRow>
-            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:id="@+id/btnGuardar"
+                    android:backgroundTint="@color/button"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar"
+                    android:id="@+id/btnBuscar"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/button"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Borrar"
+                    android:id="@+id/btnBorrar"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:backgroundTint="@color/button_red"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>

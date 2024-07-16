@@ -78,7 +78,11 @@ class ListFragment : Fragment() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                adapter.filter.filter(newText)
+                if (newText?.trim()?.isNotEmpty() == true) {
+                    adapter.filter.filter(newText)
+                } else {
+                    adapter.filter.filter("") // Clear the filter if input is just spaces
+                }
                 return true
             }
         })

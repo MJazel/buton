@@ -18,7 +18,8 @@
             android:layout_height="248dp"
             android:background="#E3ECFC"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            >
 
             <TextView
                 android:id="@+id/textViewName"

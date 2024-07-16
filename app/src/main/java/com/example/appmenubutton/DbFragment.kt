@@ -72,7 +72,7 @@ class DbFragment : Fragment(R.layout.fragment_db) {
 
         btnSubirFoto.setOnClickListener {
 
-                openImageChooser()
+            openImageChooser()
 
         }
 
